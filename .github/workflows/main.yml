@@ -19,3 +19,11 @@ jobs:
         uses: actions/checkout@v5
       - name: 4.b) Lister les fichiers du projet
         run: ls -al
+      
+      - name: 5.a) Créer un fichier de test
+        run: echo "Fichier créé par Github Actions" > testfile.txt
+      - name: 5.b) Vérifier que le fichier existe
+        run: ls -al
+      - name: 5.c) Afficher le contenu du fichier 
+        run: cat testfile.txt
+      
