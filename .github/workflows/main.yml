@@ -1,0 +1,10 @@
+name: Exercice 1 - mon premier workflow GitHub Actions
+
+on: [push] #
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      -name: 1) Message de bienvenue
+      run: echo "Bienvenue dans mon auberge !" 
