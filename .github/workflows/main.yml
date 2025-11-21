@@ -16,7 +16,6 @@ jobs:
         run: pwd
 
       - name: 4.a) Checkout du code source
-        run: actions/checkout@v5
+        uses: actions/checkout@v5
       - name: 4.b) Lister les fichiers du projet
         run: ls -al
-        
