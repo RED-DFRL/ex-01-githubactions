@@ -14,3 +14,9 @@ jobs:
       
       - name: 3) Afficher le repertoire
         run: pwd
+
+      - name: 4.a) Checkout du code source
+        run: actions/checkout@v5
+      - name: 4.b) Lister les fichiers du projet
+        run: ls -al
+        
